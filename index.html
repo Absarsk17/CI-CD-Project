@@ -1,26 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI CD Project</title>
-</head>
-<style>
-    h1,
-    h2 {
-        text-align: center;
+  <title>CI/CD Pipeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
     }
-</style>
 
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .pipeline {
+      margin-top: 30px;
+    }
+
+    .stage {
+      margin-bottom: 20px;
+    }
+
+    .stage-title {
+      color: #333;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .job {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .job-title {
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .job-description {
+      color: #555;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
 <body>
-    <h1>Wellcome!!</lh1>
-        <h1>Project Title:"Devops CI CD Pipline"</h1>
-        <h2>By</h2>
-        <h2>Shaikh Absar</h2>
-        <h1>CI CD pipline working proper</h1>
+  <div class="container">
+    <h1>CI/CD Pipeline</h1>
 
+    <div class="pipeline">
+      <div class="stage">
+        <div class="stage-title">Build Stage</div>
+        <div class="job">
+          <div class="job-title">Build</div>
+          <div class="job-description">Compiling and building the project</div>
+        </div>
+        <div class="job">
+          <div class="job-title">Unit Tests</div>
+          <div class="job-description">Running unit tests on the project</div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-title">Deploy Stage</div>
+        <div class="job">
+          <div class="job-title">Package</div>
+          <div class="job-description">Packaging the built project</div>
+        </div>
+        <div class="job">
+          <div class="job-title">Deploy</div>
+          <div class="job-description">Deploying the packaged project to the production server</div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-title">Test Stage</div>
+        <div class="job">
+          <div class="job-title">Integration Tests</div>
+          <div class="job-description">Running integration tests on the deployed project</div>
+        </div>
+        <div class="job">
+          <div class="job-title">Security Scans</div>
+          <div class="job-description">Performing security scans on the deployed project</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
